@@ -1460,7 +1460,7 @@ static bool can_load()
     current_position[E_AXIS] += 60;
     plan_buffer_line(current_position[X_AXIS], current_position[Y_AXIS], current_position[Z_AXIS],
             current_position[E_AXIS], MMU_LOAD_FEEDRATE, active_extruder);
-    current_position[E_AXIS] -= 52;
+    current_position[E_AXIS] -= 46; // old 52
     plan_buffer_line(current_position[X_AXIS], current_position[Y_AXIS], current_position[Z_AXIS],
             current_position[E_AXIS], MMU_LOAD_FEEDRATE, active_extruder);
     st_synchronize();
